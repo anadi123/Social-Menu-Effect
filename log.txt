@@ -1,0 +1,4 @@
+2022-06-23 10:02:18 INFO     This is a information
+2022-06-23 10:02:18 ERROR    This is a error message
+2022-06-23 10:02:18 DEBUG    this is debug
+2022-06-23 10:02:18 CRITICAL Fatal Error

@@ -7,12 +7,32 @@
 	border-radius:50%;
 	opacity:0;
 }
+.btn-menu {filter: url(#effect); }
+.con-btns {filter: url(#effect);}
+.con-btns .btn-menu{
+	width:60px;
+	height:60px;
+	border-radius:50%;
+	position:relative;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	padding-left: 0px;
+	background:rgb(69,62,235);
+	outline:none;
+	/*border might be 0 */
+	border:8px;  
+	z-index:100;
+	transition:all .25s ease !important;
+	cursor:pointer;
+}
 .con-btns{
 	display:flex;
 	align-items:center;
 	justify-content:center;
-	background:rgb(69,62,235);
-	border-radius:50%
+	background:rgb(255, 255, 255);
+	border-radius:50%;
+	/* margin-top: 12%; */
 }
 .con-btns button {
 	border:0px;
@@ -26,7 +46,9 @@
 	justify-content:center;
 	border-radius:50%;
 	position:absolute;
-	transition:all .5s cubic-besizer(0.175,0.885,0.320,1.275);
+	transition: all .5s;
+	transition-timing-function: cubic-bezier(0.175,0.885,0.320,1.275);
+	/* transition:all .5s cubic-besizer(0.175,0.885,0.320,1.275); */
 	z-index:1;
 	padding:0px;
 	outline:none;
@@ -38,22 +60,7 @@
 	transition:all .25s ease;
 	opacity:0;
 }
-.con-btns .btn-menu{
-	width:60px;
-	height:60px;
-	border-radius:50%;
-	position:relative;
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	padding-left:0px;
-	background:rgb(69,62,235);
-	outline:none;
-	border:8px;// might be 0
-	z-index:100;
-	transition:all .25s ease !important;
-	cursor:pointer;
-}
+
 .con-btns .btn-menu:hover{
 	transform:scale(1.2);
 }
@@ -87,6 +94,7 @@
 }
 #check:checked ~ button i{
 	opacity:1;
+	filter:url(#effect);
 }
 #check:checked ~ button:hover i{
 	transform:scale(1.2);
@@ -94,21 +102,45 @@
 #check:checked ~ .btn-menu {
 	transform:scale(1.2);
 }
+container.target { filter:url(#blur); }
 #check:checked ~ .btn-menu .effect-mouse{
 	opacity:1;
 }
+
+/* Give transition from centre to new locations */
 .con-btns .btn-5{
-	transition:all .5s cubic-besizer(0.175,0.885,0.320,1.275).1s;
+	/* transition:all .5s cubic-besizer(0.175,0.885,0.320,1.275).1s; */
+
+	transition: all .5s;
+	transition-timing-function: cubic-bezier(0.175,0.885,0.320,1.275);
 }
 .con-btns .btn-6{
-	transition:all .5s cubic-besizer(0.175,0.885,0.320,1.275).1s;
+	transition: all .5s;
+	transition-timing-function: cubic-bezier(0.175,0.885,0.320,1.275);
+	/* transition:all .5s cubic-besizer(0.175,0.885,0.320,1.275).1s; */
 }
 .con-btns .btn-1{
-	transition:all .5s cubic-besizer(0.175,0.885,0.320,1.275).05s;
+	transition: all .5s;
+	transition-timing-function: cubic-bezier(0.175,0.885,0.320,1.275);
+	/* transition:all .5s cubic-besizer(0.175,0.885,0.320,1.275).05s; */
 }
 .con-btns .btn-2{
-	transition:all .5s cubic-besizer(0.175,0.885,0.320,1.275).05s;
+	transition: all .5s;
+	transition-timing-function: cubic-bezier(0.175,0.885,0.320,1.275);
+	/* transition:all .5s cubic-besizer(0.175,0.885,0.320,1.275).05s; */
 }
+.con-btns .btn-3{
+	transition: all .5s;
+	transition-timing-function: cubic-bezier(0.175,0.885,0.320,1.275);
+	/* transition:all .5s cubic-besizer(0.175,0.885,0.320,1.275).05s; */
+}
+.con-btns .btn-4{
+	transition: all .5s;
+	transition-timing-function: cubic-bezier(0.175,0.885,0.320,1.275);
+	/* transition:all .5s cubic-besizer(0.175,0.885,0.320,1.275).05s; */
+}
+
+/* New Positions of the buttons */
 #check:checked ~ .btn-1{
 	transform:translate(90px);
 }
