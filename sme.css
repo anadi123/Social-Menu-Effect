@@ -1,3 +1,6 @@
+/* body{
+	display:flex;
+} */
 .effect-mouse {
 	position:absolute;
 	width:40px;
@@ -8,7 +11,14 @@
 	opacity:0;
 }
 .btn-menu {filter: url(#effect); }
-.con-btns {filter: url(#effect);}
+.con-btns {
+	display: flex;
+	justify-content: center; /* horizontal */
+	align-items: center; /* vertical */
+	filter: url(#effect);
+}
+/* margin-top: auto;
+margin-bottom: auto; */
 .con-btns .btn-menu{
 	width:60px;
 	height:60px;
@@ -30,8 +40,8 @@
 	display:flex;
 	align-items:center;
 	justify-content:center;
-	background:rgb(255, 255, 255);
-	border-radius:50%;
+	/* background:rgb(255, 255, 255); */
+	/* border-radius:50%; */
 	/* margin-top: 12%; */
 }
 .con-btns button {
@@ -69,6 +79,9 @@
 	position:absolute;
 	transition:all .25s ease;
 	color:#fff;
+}
+.bx{
+	color:white;
 }
 .con-btns .btn-menu .bx-x {
 	opacity:0;
