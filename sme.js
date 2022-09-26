@@ -7,5 +7,5 @@ document.addEventListener('mousemove', (evt)=> {
 	effect.style.transform=`translate(${x/2}px,${y/2}px)`	
 	console.log(x,y)
 })
-document.getElementById()
+// document.getElementById()
 // DOMRect {x: 8, y: 8, width: 134, height: 214, top: 8, …}
